@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- saved from url=(0145)https://alienware.dell-brand.com/fy200130/?VEN1=bl_hsb:050002,,901vmy6776&ST=BBZToplink&dgc=st&dgseg=dhs&cid=62020&lid=59930&acd=1059262020599303 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>a img{border:0px;}</style><script>var lib = window.parent.conversant.tagManager.lib, _ = lib._,$ = lib.$;</script></head><body style="margin:0px;overflow:hidden;"><script type="text/javascript">
+
+function getParameters(i){var r={};if(""!==i)for(var e=i.split("%26"),t=0,f=e.length;t<f;t++){var a=e[t].split("%3d");if(void 0===a[1])a[1]="";else if(a.length>2)for(var l=2,n=a.length;l<n;l++)a[1]+="="+a[l];if(-1!==a[1].indexOf("#")){var v=a[1].split("#");a[1]=v[0]}void 0===r[a[0]]&&(r[a[0]]=a[1])}return r}
+
+var Treferrer = encodeURIComponent("https://sp0.baidu.com/9q9JcDHa2gU2pMbgoY3K/adrc.php?t=06KL00c00fAL69308l-b07qwAs0-kwuI00000ZhRnNC00000XiAHjC.THLP3VjZzn8kzo1Z_U30UWdBmy-bIfK15H6znHf4nAn3nj0znjN-nHf0IHYzwWK7wW0znjNjf1FDrDFarj6YwRR1nYNArDmsPHR1PfK95gTqFhdWpyfqn1cdrjc1rHfkPzusThqbpyfqnHm0uHdCIZwsrBtEmywhmgFVQhd-uA-9TAk-Xa4WUvYEmyfEmv_EnH0drHcVPWcsnW0VPHb4n10Vn1qywR3k5yF_gv91mWCsPH0snjc_QjbsnguVXHmLP1mhRdfqfbFpNAqsUA-8pzuPR7F75y9YIZK1rBtEmykGuy4LmgF-Qhw-UAsVmMF9Uhf8mvqVQvu4nW0snHnsQsKWThnqnW6snjT&tpl=tpl_11583_19963_16027&l=1513198713&attach=location%3D%26linkName%3D%25E8%25A7%2586%25E9%25A2%2591%25E5%25A4%25B4%25E9%2583%25A8-%25E6%25A0%2587%25E9%25A2%2598-%25E4%25B8%25BB%25E6%25A0%2587%25E9%25A2%2598%26linkText%3DALIENWARE%25E5%25A4%2596%25E6%2598%259F%25E4%25BA%25BA%25E4%25B8%25AD%25E5%259B%25BD%25E5%25AE%2598%25E6%2596%25B9%25E7%25BD%2591%25E7%25AB%2599%2520%25E8%258B%25B1%25E7%2589%25B9%25E5%25B0%2594%2520%25E9%2585%25B7%25E7%259D%25BF%2520%25E9%2599%2590%25E6%2597%25B6%25E7%2589%25B9%25E6%2583%25A0%26xp%3Did(%2522m3258239417_canvas%2522)%252FDIV%255B1%255D%252FDIV%255B1%255D%252FDIV%255B1%255D%252FDIV%255B1%255D%252FDIV%255B1%255D%252FH2%255B1%255D%252FA%255B1%255D%26linkType%3D%26checksum%3D20&ie=utf-8&f=3&tn=baidu&wd=%E5%A4%96%E6%98%9F%E4%BA%BA%E7%AC%94%E8%AE%B0%E6%9C%AC&oq=%25E5%25A4%2596%25E6%2598%259F%25E4%25BA%25BA&rqlang=cn&prefixsug=%25E5%25A4%2596%25E6%2598%259F%25E4%25BA%25BA&rsp=0").toLowerCase();
+var Tdomain = window.location.host; //landing page domain
+var event_id = ""; //cj
+var domain; //sales page domain
+var delimiter = "%3f";
+var qs = Treferrer.substring(Treferrer.indexOf(delimiter) + 1);
+var mplx_parameters = getParameters(Treferrer.substring(Treferrer.indexOf(delimiter) + 1));
+
+//sets cookie in dell-brand
+if (Tdomain.indexOf(".dell-brand.com") !=-1) {domain = ".dell-brand.com";}
+	else {domain = ".dell.com";}
+
+//dell-brand to dell.com referrer event_id grab logic	
+if (Tdomain == "www.dell.com" && Treferrer.indexOf(".dell-brand.com") !=-1 && Treferrer.indexOf("cjevent%3d") !=-1) {
+
+event_id = mplx_parameters["cjevent"];
+
+}
+
+
+if (event_id) {
+
+var date = new Date();
+date.setTime(date.getTime() + (30 * 24 * 60 * 60 * 1000));
+var expires = "; expires=" + date.toGMTString();
+document.cookie = "VendorClid="+ event_id + "; expires="+ expires +"; domain="+ domain +"; secure; path=/";
+
+ }
+
+
+//acd2 cookie setting enhancement for ctm conditional fire
+var dcoFT = "bl_hsb:050002,,901vmy6776";
+var dgcValue="st";
+var DGCValue_uppercase ="";
+var domain = "dell.com";
+var acdValue = "1059262020599303";
+var ACDValue = "";
+if (acdValue == "") {var acd_value = ACDValue;}
+if (ACDValue == "") {var acd_value = acdValue;}
+var dco_value = "null";
+if (dgcValue == "ba" || DGCValue_uppercase == "ba") {var dco_value = dcoFT;}
+
+
+//dell-brand to dell.com referrer event_id grab logic	
+if (Tdomain == "www.dell.com" && Treferrer.indexOf(".dell-brand.com") !=-1 && Treferrer.indexOf("acd%3d") !=-1) {
+
+acd_value = mplx_parameters["acd"];
+
+
+var date = new Date();
+date.setTime(date.getTime() + (730 * 24 * 60 * 60 * 1000));
+var expires = "; expires=" + date.toGMTString();
+document.cookie = "acd2="+ acd_value +"|"+ dco_value +"; expires="+ expires +"; domain="+ domain +"; secure; path=/";
+
+}
+
+</script></body></html>

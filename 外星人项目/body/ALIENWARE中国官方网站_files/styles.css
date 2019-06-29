@@ -1,0 +1,96 @@
+
+p,li,ul,h2,h3,h4,dl,dt{padding:0; margin:0; list-style:none;}
+.black{background:#d9d9d9}
+a{text-decoration:none;}
+a img{display:block;border:none;}
+sup{line-height:100%;}
+
+
+.header{background:#171719;position:fixed;top:0;left:0;width:100%;z-index:9999}
+.header .wrap{height:50px;}
+.header li{float:left;position:relative;}
+.header li a{position:relative;padding:0 ;width:100px;display:block;height:50px;line-height:50px;text-align:center;color:#c3c3c3;font-size:14px;cursor:pointer;}
+.header li ul{background:#fff;position:absolute;left:0;top:50px;display:none;z-index:999;overflow:hidden}
+
+.header li:hover ul{display:block;box-shadow:0px 0px 2px #c3c3c3;}
+.header li:hover ul li{border-bottom:1px solid #c3c3c3;}
+.header li:hover ul li a{color:#444;height:40px;line-height:40px;}
+
+
+.header li.more,.header li.home{float:right;}
+
+
+.header li.new a{text-indent:30px;text-align:left;width:120px;}
+.header li.new{background:url(../public/images/ico-new.jpg) no-repeat 75% center;}
+.header li.new ul{left:-20px;}
+.header li.new ul,.header li.new ul li a{width:150px;text-align:center;text-indent:0;}
+
+.header li.onsale a{text-indent:30px;text-align:left;width:100px;}
+.header li.onsale{background:url(../public/images/ico-onsale.jpg) no-repeat 75% center;}
+
+.header li.home a{text-indent:15px;text-align:left;width:180px;}
+.header li.home{background:url(../public/images/ico-arrow.jpg) no-repeat right center;}
+
+.header li.da a{text-indent:30px;text-align:left;width:156px;}
+.header li.da{background:url(../public/images/ico-da.jpg) no-repeat right center;}
+
+.header li.logo{background:none;width:50px;height:50px;}
+.header li.logo a{padding:3px;}
+.header li.logo a:hover{background:none;}
+
+
+.conact-bar{position: fixed; right: 0; top: 50%; margin-top: -140px; z-index: 999; background:url(../public/images/conact-bar.jpg) no-repeat center center; width:213px; height:241px;}
+.conact-bar .close{width: 26px; height: 26px; background: url(../public/images/conact-bar-close.jpg) no-repeat center bottom; display: block; position: absolute; left: -26px; top: 14px;}
+.conact-bar .close.open{background: url(../public/images/conact-bar-close.jpg) no-repeat center top;}
+.conact-bar ul{padding: 0 13px ;}
+.conact-bar ul li{padding: 0 0;}
+.conact-bar ul li a{display: block;cursor:pointer}
+
+.contact-bar{    clear: both;     padding: 6px 0 0 0;}
+.contact-bar a{  color: #ce1125;    font-size: 14px; }
+div.conact-bar-qr{transition: height .5s;text-align:center;background:#000;position: absolute;top:241px;left:0;width:100%;height:0;overflow:hidden;}
+
+
+.footer{width:100%;background:url(../public/images/footer.jpg) no-repeat center 0 #101010;height:288px; }
+.footer .finner{width:1200px;margin:0 auto;}
+.footer .finner ul{clear:both;width:100%;}
+.footer .finner li{float:left;}
+
+.footer-legal { padding-left: 15px;padding-right: 15px;padding-top: 25px;background-color: #000;}
+.contextual-legal{width: 1170px;line-height: 1.6em;letter-spacing: .04em;font-weight: 200; color: #fff;opacity: .6;font-size:11px;margin:0 auto;}
+.contextual-legal a{color: #fff;    text-decoration: underline;}
+
+
+.intel-logo{color:#333;padding:10px 0; height:70px;}
+.intel-logo .wrap{text-align:right;}
+.s2017-container{width: 1170px;margin:0 auto;position:relative;}
+.s2017bottom{background:#EEEEEE;clear:both;height:45px;}
+.s2017bottom ul{padding:0 15px;}
+.s2017bottom ul li{float:left;padding: 12px 10px 12px 0;}
+.s2017bottom ul li a{font-size:14px;color: #444;}
+
+.s2017footer{position: relative;background:#007DB8;clear:both;overflow:hidden;}
+.s2017footer ul{padding: 8px;}
+.s2017footer ul li{float:left;padding: 2px 7px;}
+.s2017footer ul li a{color:#fff;font-size:12px;}
+.s2017footer ul li a:hover{text-decoration: underline;}
+
+.s2017legal{ padding:0 15px ;clear:both;overflow:hidden;  font-family: 'roboto',Arial,Helvetica,sans-serif;font-size:11px; line-height: 1.6em;    letter-spacing: .04em;    font-weight: 200;    color: #cce7f3;    opacity: .6;}
+.s2017legal a {    color: #cce7f3;    text-decoration: underline;}
+.s2017footer .menu-links-container {background:url(//odg.dell-brand.com/public/images/s2017menu.jpg) no-repeat center 0;   border-bottom: 1px solid #0087c7;overflow:hidden;}
+.s2017feedback{background:url(//odg.dell-brand.com/public/images/feedback.gif) no-repeat 0 center;padding-left:14px;}
+.s2017legals{background:url(//odg.dell-brand.com/public/images/s2017menu.jpg) no-repeat center -3px;padding-top:30px;}
+
+
+.country-selector{display: block;width: 150px;font-size: 14px;color: #ffff;float: right;padding: 13px  0;position: relative;background: url(https://odg.dell-brand.com/public/images/country-selector-open.jpg) no-repeat 115px -19px;}
+.country-selector.country-selector-open{background-position:115px 19px;}
+.country-selector img{height:15px; vertical-align: middle;display: inherit;}
+.country-selector a{color:#444;}
+
+.s2017bottom ul.countrylist{position: absolute;z-index: 9999;top: -252px;left:-120px;width: 268px;overflow-y: auto;height: 250px;background: #fff;border: 1px solid #ccc;padding:0;display:none;}
+.s2017bottom ul.countrylist li{float:none;padding:0;}
+.s2017bottom ul.countrylist li a{color:#444;display:block;padding:3px 10px;line-height: 20px;}
+.s2017bottom ul.countrylist li a:hover {    background-color: #cce7f3;}
+
+.scroll {position:fixed;right:20px;bottom:20px;width:50px;height:50px;z-index:99999999;}
+.scroll a {display: block;}
